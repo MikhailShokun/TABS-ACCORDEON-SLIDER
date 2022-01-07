@@ -5,29 +5,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tabs</title>
+    <title>T.A.S.</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <main class="main">
         <div class="_container">
-            <div class="tabs">
-                <div class="tabs__nav tabs-nav">
-                    <div class="tabs-nav__item is-active" data-tab-name="tab-1">
-                        Tab 1
+            <h1 class="main__title">Tabs, accordeon, slider</h1>
+
+            <section class="tabs">
+                <h2 class="tabs__title title">Tabs</h2>
+                <div class="tabs__wrapper">
+                    <div class="tabs__nav tabs-nav">
+                        <div class="tabs-nav__item is-active" data-tab-name="tab-1">
+                            Tab 1
+                        </div>
+                        <div class="tabs-nav__item" data-tab-name="tab-2">Tab 2</div>
+                        <div class="tabs-nav__item" data-tab-name="tab-3">Tab 3</div>
                     </div>
-                    <div class="tabs-nav__item" data-tab-name="tab-2">Tab 2</div>
-                    <div class="tabs-nav__item" data-tab-name="tab-3">Tab 3</div>
-                </div>
-                <div class="tabs__content">
-                    <div class="tab is-active tab-1">Содержание таба 1</div>
-                    <div class="tab tab-2">Содержание таба 2 + Содержание таба 2</div>
-                    <div class="tab tab-3">
-                        Содержание таба 3 + Содержание таба 3 + Содержание таба 3
+                    <div class="tabs__content">
+                        <div class="tab is-active tab-1">Содержание таба 1</div>
+                        <div class="tab tab-2">Содержание таба 2 + Содержание таба 2</div>
+                        <div class="tab tab-3">
+                            Содержание таба 3 + Содержание таба 3 + Содержание таба 3
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section class="accordeon">
+                <h2 class="accordeon__title title">Accordeon</h2>
+                <div class="accordeon__item">
+                    <div class="accordeon__header">Header 1</div>
+                    <div class="accordeon__body">
+                        <div class="accordeon__content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sequi atque autem nulla quaerat sapiente eum nihil. Excepturi nisi accusantium reprehenderit incidunt, quos sed eligendi esse vel quidem laudantium, voluptatem repellendus ut nihil soluta
+                                est sapiente cupiditate temporibus accusamus vitae praesentium. Commodi eaque beatae provident reiciendis ipsam dicta, quod expedita!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordeon__item">
+                    <div class="accordeon__header">Header 2</div>
+                    <div class="accordeon__body">
+                        <div class="accordeon__content">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est praesentium tempore velit officia ad sed dolor vel quasi deleniti voluptatem delectus rerum atque, ipsam temporibus nulla incidunt odio provident blanditiis dolore harum? A ipsa animi ab quae
+                                sapiente praesentium vero?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordeon__item">
+                    <div class="accordeon__header">Header 3</div>
+                    <div class="accordeon__body">
+                        <div class="accordeon__content">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem reiciendis veritatis accusamus perspiciatis numquam sequi minus tempora amet rerum, dolor dolores, eaque ea accusantium cupiditate, minima saepe laudantium atque? Delectus facilis et
+                                doloremque autem at laborum reprehenderit illum tempora, deserunt nostrum labore sit praesentium ipsum quod sint vitae eos odio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slider">
+                <h1 class="slider__title title">Slider</h1>
+                <div class="slider__wrap">
+                    <div class="slider__btn-left"></div>
+                    <div class="slider__body">
+                        <div class="infinity-slider">
+                            <img src="img/html.png" class="slider__item" alt="html" />
+                            <img src="img/CSS3.png" class="slider__item" alt="css" />
+                            <img src="img/js.png" class="slider__item" alt="js" />
+                            <img src="img/vs_code.png" class="slider__item" alt="vscode" />
+                            <img src="img/git.png" class="slider__item" alt="git" />
+                            <img src="img/gulp.png" class="slider__item" alt="gulp" />
+                            <img src="img/sass.png" class="slider__item" alt="sass" />
+                            <img src="img/react.png" class="slider__item" alt="react" />
+                            <img src="img/jquery.png" class="slider__item" alt="jquery" />
+                            <img src="img/node.png" class="slider__item" alt="node js" />
+                            <img src="img/angular.png" class="slider__item" alt="angular" />
+                            <img src="img/vue.png" class="slider__item" alt="vue js" />
+                            <img src="img/slider.png" class="slider__item" alt="slider" />
+                        </div>
+                    </div>
+
+                    <div class="slider__btn-right"></div>
+                </div>
+            </section>
         </div>
     </main>
     <script src="js/script.js"></script>

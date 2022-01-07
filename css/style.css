@@ -93,26 +93,48 @@ h6 {
 /*--------------------*/
 
 body {
-    font-weight: 600;
+    height: 100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
 }
 
 ._container {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
 }
 
-.tabs {
+.main__title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.title {
+    color: #696363;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+/* ----------tabs-------- */
+
+.tabs__wrapper {
     margin-top: 30px;
     border: 1px solid chocolate;
 }
 
 .tabs-nav {
-    font-size: 24px;
     display: flex;
     justify-content: space-between;
 }
 
 .tabs-nav__item {
+    font-size: 24px;
     padding: 20px;
     border-bottom: 1px solid transparent;
     cursor: pointer;
@@ -120,6 +142,7 @@ body {
 }
 
 .tabs-nav__item.is-active {
+    background: #d1c6c6;
     color: #aa3496;
     border-color: #363683;
 }
@@ -134,4 +157,101 @@ body {
 
 .tab.is-active {
     display: block;
+}
+
+
+/* -------------accordeon-------------- */
+
+.accordeon {
+    margin-top: 50px;
+}
+
+.accordeon__item {
+    border: 1px solid #8d8282;
+    border-radius: 5px;
+}
+
+.accordeon__header {
+    color: #aa3496;
+    padding: 20px;
+    background-color: #d1c6c6;
+    cursor: pointer;
+    user-select: none;
+}
+
+.accordeon__header:hover {
+    background-color: #e4cfcf;
+}
+
+.accordeon__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in;
+}
+
+.accordeon__body>* {
+    padding: 20px;
+    margin: 0;
+    display: block;
+}
+
+
+/* -----------slider----------  */
+
+.slider {
+    padding-bottom: 50px;
+}
+
+.slider__body {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.infinity-slider {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.infinity-slider img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+
+.infinity-slider .opacity0 {
+    opacity: 0;
+}
+
+.slider__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.slider__btn-left {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    width: 220px;
+    height: 180px;
+    background: url('../img/left.png') no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.slider__btn-right {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    width: 220px;
+    height: 180px;
+    background: url('../img/right.png') no-repeat;
+    background-size: contain;
+    cursor: pointer;
 }
