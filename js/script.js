@@ -1,5 +1,3 @@
-"use strict";
-
 // -------------tabs-------------
 
 let tab = function() {
