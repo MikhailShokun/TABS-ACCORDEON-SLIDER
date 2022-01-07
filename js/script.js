@@ -55,7 +55,7 @@ let accord = function() {
 
 accord();
 
-// --------------slider-V1--------------
+// --------------slider---------------
 
 
 let images = document.querySelectorAll('.infinity-slider img');
