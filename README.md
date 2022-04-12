@@ -1,4 +1,4 @@
 GitHub Pages:
 https://mikhailshokun.github.io/tabsAkordSlider/
 
-exercise to practice creating tabs, accordion and slider
+Exercise to practice creating tabs, accordion and slider. Using html, css and java script
